@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "open-data-analysis"
+version = "0.1.0"
+description = "OTUS Homework #8. Open Data Analysis"
+authors = ["inna-tuzhikova <inna-tuzhikova@github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "open_data_analysis"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "1.26.2"
+pandas = "2.1.4"
+matplotlib = "3.8.2"
+seaborn = "0.13.0"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "^4.0.9"
+theme-darcula = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
